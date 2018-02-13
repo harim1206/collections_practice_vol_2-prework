@@ -21,8 +21,9 @@ def first_wa(arr)
 
   arr.find{
     |name|
-    puts ("name: #{name}")
-    name.start_with?("wa")
+    if name.start_with?("wa")
+      name
+    end
   }
 
 end
