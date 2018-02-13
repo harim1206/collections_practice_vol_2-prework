@@ -21,7 +21,7 @@ def first_wa(arr)
 
   arr.find{
     |name|
-    if name.start_with?("wa")
+    if name[0] == "w" && name[1] == "a"
       name
     end
   }
